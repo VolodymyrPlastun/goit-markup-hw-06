@@ -528,6 +528,7 @@ img {
   opacity: 0;
 }
 .modal {
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -539,6 +540,14 @@ img {
     opacity var(--fransition-duration) var(--timing-function);
   background-color: var(--mainbgc);
 }
+.modal-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--text-color-sec);
+}
 .modal-button-close {
   position: absolute;
   top: 8px;
@@ -549,7 +558,91 @@ img {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--mainbgc);
+    
+}
+.modal-button-close:focus .modal-icon,
+.modal-button-close:hover .modal-icon {
+  fill: var(--text-color-logo);
 }
 .modal-icon {
+  transition: fill var(--fransition-duration); var(--timing-function);
   fill: #000000;
+}
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-comment {
+  margin-bottom: 20px;
+}
+.form-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--text-color-main);
+}
+
+.form-input::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-input.comment {
+  padding: 12px  16px;
+}
+.form-input {
+  padding: 11px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-input:focus {
+  border-color: var(--text-color-logo);
+}
+.form-input:focus ~ .form-icon {
+  fill: var(--text-color-logo);
+}
+.form-icon {
+  display: flex;
+  position: absolute;
+
+  left: 15px;
+  bottom: 14px;
+}
+.form-checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.form-checkbox-link {
+  text-decoration: underline;
+  color: var(--text-color-logo);
+}
+.checkbox-input {
+  /* appearance: none; */
+  margin-right: 9px;
+
+}
+.checkbox-input:checked + .checkbox-icon {
+  background-color: black;
+}
+.modal-button {
+  padding: 10px 55px;
+  font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.06em;
+
+color: var(--text-color-white);
+background: var(--text-color-logo);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border-color: transparent;
 }

@@ -411,11 +411,58 @@
     </footer>
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
         <button data-modal-close type="button" class="modal-button-close">
           <svg class="modal-icon" width="11" height="11">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <form class="form">
+          <div class="form-field">
+            <label for="name" class="form-label">Имя</label>
+            <input type="username" name="name" id="name" class="form-input" />
+            <svg class="form-icon" width="12" height="12">
+              <use href="./images/icons.svg#usericon"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label for="tel" class="form-label">Телефон</label>
+            <input type="tel" name="tel" id="tel" class="form-input" />
+
+            <svg class="form-icon" width="13" height="13">
+              <use href="./images/icons.svg#userphone"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label for="email" class="form-label">Почта</label>
+            <input type="email" name="email" id="email" class="form-input" />
+
+            <svg class="form-icon" width="15" height="12">
+              <use href="./images/icons.svg#usermail"></use>
+            </svg>
+          </div>
+          <div class="form-field form-comment">
+            <label for="comment" class="form-label">Комментарий</label>
+            <input
+              type="text"
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+              class="form-input comment"
+            />
+          </div>
+          <div class="form-checkbox">
+            <label for="checkbox" class="checkbox-label"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="form-checkbox-link" href="#">Условия договора</a></label
+            >
+            <input type="checkbox" name="checkbox" id="checkbox" class="checkbox-input" />
+            <svg class="checkbox-icon" width="16" height="15">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+          </div>
+          <button class="modal-button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
