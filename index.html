@@ -375,7 +375,7 @@
           </address>
         </div>
         <div class="footer-links">
-          <h2 class="footer-social-header">Присоединяйтесь</h2>
+          <h2 class="footer-title">Присоединяйтесь</h2>
           <ul class="footer-social">
             <li class="footer-social-item">
               <a class="footer-social-link" href="#">
@@ -407,6 +407,20 @@
             </li>
           </ul>
         </div>
+        <div class="form-container">
+          <h2 class="footer-title">Подпишитесь на рассылку</h2>
+          <form class="footer-form">
+            <label class="footer-label">
+              <input class="footer-input" type="email" name="footer-email" placeholder="E-mail" />
+            </label>
+            <button class="footer-form-button" type="submit">
+              Подписаться
+              <svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#iconsend"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
@@ -418,31 +432,35 @@
         </button>
         <form class="form">
           <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-          <div class="form-field">
-            <label for="name" class="form-label">Имя</label>
-            <input type="username" name="name" id="name" class="form-input" />
+
+          <label class="form-label"
+            >Имя
+            <input type="username" name="name" class="form-input" />
             <svg class="form-icon" width="12" height="12">
               <use href="./images/icons.svg#usericon"></use>
             </svg>
-          </div>
-          <div class="form-field">
-            <label for="tel" class="form-label">Телефон</label>
-            <input type="tel" name="tel" id="tel" class="form-input" />
+          </label>
+
+          <label class="form-label"
+            >Телефон
+            <input type="tel" name="tel" class="form-input" />
 
             <svg class="form-icon" width="13" height="13">
               <use href="./images/icons.svg#userphone"></use>
             </svg>
-          </div>
-          <div class="form-field">
-            <label for="email" class="form-label">Почта</label>
-            <input type="email" name="email" id="email" class="form-input" />
+          </label>
+
+          <label class="form-label"
+            >Почта
+            <input type="email" name="email" class="form-input" />
 
             <svg class="form-icon" width="15" height="12">
               <use href="./images/icons.svg#usermail"></use>
             </svg>
-          </div>
-          <div class="form-field form-comment">
-            <label for="form-label" class="form-label">Комментарий</label>
+          </label>
+
+          <label class="form-label form-comment">
+            Комментарий
             <textarea
               class="form-input comment"
               name="comment"
@@ -450,7 +468,7 @@
               rows="10"
               placeholder="Введите текст"
             ></textarea>
-          </div>
+          </label>
 
           <label class="form-checkbox">
             <input type="checkbox" name="checkbox" class="checkbox-input visually-hidden" />
