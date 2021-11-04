@@ -418,10 +418,12 @@ textarea {
 .footer-form {
   display: flex;
 }
+.footer-label {
+  margin-right: 12px;
+}
 .footer-input {
   cursor: pointer;
   padding: 15px 16px;
-  margin-right: 12px;
   width: 358px;
 height: 50px;
  border: 1px solid rgba(255, 255, 255, 0.3);
@@ -561,6 +563,7 @@ color: var(--text-color-white);
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -570,6 +573,7 @@ color: var(--text-color-white);
 .backdrop.is-hidden .modal {
   transform: scale(0.5) translate(-50%, -50%);
   opacity: 0;
+ 
 }
 .modal {
   padding: 40px;
@@ -661,6 +665,7 @@ transition: fill var(--transition-duration) var(--timing-function);
   bottom: 14px;
 }
 .form-checkbox {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -672,15 +677,14 @@ transition: fill var(--transition-duration) var(--timing-function);
   border: transparent;
 }
 .checkbox-empty {
+  margin-right: 7px;
   display: flex;
-  margin-right: -16px;
   width: 16px;
   height: 15px;
   border: 2px solid var(--text-color-sec);
   border-radius: 4px;
 }
 .checkbox-icon {
-  margin-right: 7px;
   fill: var(--text-color-white);
 }
 .form-checkbox-link {
